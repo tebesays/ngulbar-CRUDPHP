@@ -51,6 +51,7 @@ if (isset($_POST['kocak']))
              <table border='1' class="table table-striped table-bordered table-hover" id="dataTables-example">
                      <thead>
                          <tr>
+                             <th>ID Produk</th>
                              <th>Nama Produk</th>
                              <th>Jenis Produk</th>
                              <th>Jumlah Produk</th>
@@ -71,8 +72,9 @@ if (isset($_POST['kocak']))
                        <td><?php echo $row[1] ?></td>
                        <td><?php echo $row[2] ?></td>
                        <td><?php echo $row[3] ?></td>
+                       <td><?php echo $row[4] ?></td>
                        <td>
-                         <input type="BUTTON" name="apus" VALUES="HAPUS" />
+                         <a href='delete.php?id=<?php echo $row[0];?>'><input type="BUTTON" name="apus" value="HAPUS"/></a>
                        </td>
                      </tr>
                      <?php
