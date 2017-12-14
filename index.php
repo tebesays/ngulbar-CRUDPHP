@@ -74,7 +74,7 @@ if (isset($_POST['kocak']))
                        <td><?php echo $row[3] ?></td>
                        <td><?php echo $row[4] ?></td>
                        <td>
-                         <a href='delete.php?id=<?php echo $row[0];?>'><input type="BUTTON" name="apus" value="HAPUS"/></a>
+                         <a href='delete.php?id=<?php echo $row[0];?>'><input type="BUTTON" name="apus" value="HAPUS"/></a>||<a href='edit.php?id=<?php echo $row[0];?>'><input type="BUTTON" name="apus" value="EDIT"/></a>
                        </td>
                      </tr>
                      <?php
